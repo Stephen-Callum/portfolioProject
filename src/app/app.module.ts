@@ -8,7 +8,7 @@ import { WelcomeSectionComponent } from './components/welcome-section/welcome-se
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 import { FooterSectionComponent } from './components/footer-section/footer-section.component';
-
+import { AboutSectionComponent } from './components/about-section/about-section.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +16,12 @@ import { FooterSectionComponent } from './components/footer-section/footer-secti
     WelcomeSectionComponent,
     ProjectsSectionComponent,
     SkillsSectionComponent,
-    FooterSectionComponent
+    FooterSectionComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

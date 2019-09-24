@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { default as ParticlesConfig } from 'src/assets/particle-js/config/titleConfig/particlesjs-config.json';
+
+// ParticlesJS declaration
+declare var particlesJS: any;
 
 @Component({
   selector: 'app-welcome-section',
@@ -7,9 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    particlesJS('particles-js', ParticlesConfig, function() {
+      console.log('particles.js config loaded...');
+    });
   }
-
 }
