@@ -9,6 +9,7 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 import { FooterSectionComponent } from './components/footer-section/footer-section.component';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
+import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { AboutSectionComponent } from './components/about-section/about-section.
     ProjectsSectionComponent,
     SkillsSectionComponent,
     FooterSectionComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,

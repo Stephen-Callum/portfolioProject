@@ -1,0 +1,42 @@
+.contact-section {
+    padding: 7rem 0 0;
+    background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.8) 0%, rgba(22, 22, 22, 1) 100%);
+}
+
+.contact-section .card {
+    border: 0;
+    border-bottom: 0.25rem solid #64a19d;
+}
+
+.contact-section .card h4 {
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-section .card hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 3rem;
+}
+
+.card-link {
+    padding: 1.25rem 2rem;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
+
+.card:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0.1875rem 0.1875rem 0.5rem 0 rgba(255, 255, 255, 0.9) !important;
+}
+
+.card:focus {
+    background-color: #d8d8d8;
+    color: black;
+}
+
+.card:active {
+    background-color: #acacac !important;
+}
