@@ -17,5 +17,6 @@ export class WelcomeSectionComponent implements OnInit {
     // particlesJS('particles-js', ParticlesConfig, function() {
     //   console.log('particles.js config loaded...');
     // });
+    
   }
 }

@@ -9,12 +9,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Press+Start+2P&display=swap" rel="stylesheet">
-  <!-- Font Awesome kit -->
+  <!-- Font Awesome kit CDN -->
   <script src="https://kit.fontawesome.com/94b1427186.js" crossorigin="anonymous"></script>
+  <!-- SmoothScroll CDN -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target="#mainNav" data-offset="0">
+  <!-- Application root element -->
   <app-root></app-root>
+
+  <!-- SmoothScroll script -->
+  <script>
+    const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+      speed: 1000
+    });
+  </script>
 </body>
 
 </html>

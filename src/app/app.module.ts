@@ -10,6 +10,7 @@ import { SkillsSectionComponent } from './components/skills-section/skills-secti
 import { FooterSectionComponent } from './components/footer-section/footer-section.component';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { ContactSectionComponent } from './components/contact-section/contact-se
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
