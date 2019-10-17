@@ -4,33 +4,33 @@
             "projectImage": "../../assets/images/portfolio-images/portfolioproject.JPG",
             "projectTitle": "Portfolio Page",
             "projectText": "The page you are looking at, made with Angular 8 to showcase my abilities as a developer.",
-            "projectLanguages": "/ Angular / TypeScript / HTML / CSS / JavaScript / Webpack / Express / ",
+            "projectLanguages": "/ Angular / TypeScript / Bootstrap / particles.js / HTML / CSS / JavaScript / Webpack / Express / ",
             "projectLink": "https://stephencallum.netlify.com/",
             "projectCode": "https://github.com/Stephen-Callum/portfolioProject"
         },
         {
             "projectImage": "../../assets/images/portfolio-images/FormValidation3.jpg",
             "projectTitle": "Form Validation: Sign up page",
-            "projectText": "Client-side form validation using VanillaJS",
-            "projectLanguages": "/ HTML / CSS / JavaScript / Webpack / Express / ",
+            "projectText": "Client-side form validation using VanillaJS. Regular expressions were used to verify that password input is correct within my given guidelines.",
+            "projectLanguages": "/ HTML / CSS / JavaScript / Webpack / Express / Materialize CSS / ",
             "projectLink": "https://greener-pastures-form.netlify.com/",
             "projectCode": "https://github.com/Stephen-Callum/FormValidation"
         },
         {
             "projectImage": "../../assets/images/portfolio-images/flixfinder.JPG",
-            "projectTitle": "Movie Info App",
-            "projectText": "Client-side form validation using VanillaJS",
-            "projectLanguages": "/ HTML / CSS / JavaScript / Webpack / Express / ",
-            "projectLink": "https://greener-pastures-form.netlify.com/",
-            "projectCode": "https://github.com/Stephen-Callum/FormValidation"
+            "projectTitle": "FlixFinder: Movie Info App",
+            "projectText": "A movie search app that requests data of films from the open movie database using the Axios HTTP client.",
+            "projectLanguages": "/ HTML / CSS / JavaScript / jQuery / Webpack / Express / Bootstrap / Axios / OMDb API /",
+            "projectLink": "https://flixfinder.netlify.com/",
+            "projectCode": "https://github.com/Stephen-Callum/MovieInfoApp"
         },
         {
             "projectImage": "../../assets/images/portfolio-images/findinggithub.JPG",
-            "projectTitle": "Portfolio Page",
-            "projectText": "Client-side form validation using VanillaJS",
-            "projectLanguages": "/ HTML / CSS / JavaScript / Webpack / Express / ",
-            "projectLink": "https://stephencallum.netlify.com/",
-            "projectCode": "https://github.com/Stephen-Callum/portfolioProject"
+            "projectTitle": "FindingGithub: Github search app",
+            "projectText": "A github user account searching app using Ajax to request data from the Github API. ",
+            "projectLanguages": "/ HTML / CSS / Bootstrap / JavaScript / jQuery / Webpack / Express / Ajax / Github API / ",
+            "projectLink": "https://findinggithub.netlify.com/",
+            "projectCode": "https://github.com/Stephen-Callum/SimpleGithubFinder"
         }
     ]
 }
