@@ -1,0 +1,36 @@
+{
+    "projects": [
+        {
+            "projectImage": "../../assets/images/portfolio-images/portfolioproject.JPG",
+            "projectTitle": "Portfolio Page",
+            "projectText": "The page you are looking at, made with Angular 8 to showcase my abilities as a developer.",
+            "projectLanguages": "/ Angular / TypeScript / HTML / CSS / JavaScript / Webpack / Express / ",
+            "projectLink": "https://stephencallum.netlify.com/",
+            "projectCode": "https://github.com/Stephen-Callum/portfolioProject"
+        },
+        {
+            "projectImage": "../../assets/images/portfolio-images/FormValidation3.jpg",
+            "projectTitle": "Form Validation: Sign up page",
+            "projectText": "Client-side form validation using VanillaJS",
+            "projectLanguages": "/ HTML / CSS / JavaScript / Webpack / Express / ",
+            "projectLink": "https://greener-pastures-form.netlify.com/",
+            "projectCode": "https://github.com/Stephen-Callum/FormValidation"
+        },
+        {
+            "projectImage": "../../assets/images/portfolio-images/flixfinder.JPG",
+            "projectTitle": "Movie Info App",
+            "projectText": "Client-side form validation using VanillaJS",
+            "projectLanguages": "/ HTML / CSS / JavaScript / Webpack / Express / ",
+            "projectLink": "https://greener-pastures-form.netlify.com/",
+            "projectCode": "https://github.com/Stephen-Callum/FormValidation"
+        },
+        {
+            "projectImage": "../../assets/images/portfolio-images/findinggithub.JPG",
+            "projectTitle": "Portfolio Page",
+            "projectText": "Client-side form validation using VanillaJS",
+            "projectLanguages": "/ HTML / CSS / JavaScript / Webpack / Express / ",
+            "projectLink": "https://stephencallum.netlify.com/",
+            "projectCode": "https://github.com/Stephen-Callum/portfolioProject"
+        }
+    ]
+}

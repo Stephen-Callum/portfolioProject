@@ -1,152 +1,38 @@
 <!-- Projects section -->
 
 <section id="projects" class="projects-section bg-light">
+  <!-- container for projects -->
   <div class="container">
-
-    <!-- Featured Project Row -->
-    <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any
-              project - even commercial projects! Download it, customize it, and publish your website!</p>
+    <!-- one project for row (ngFor* later to pull from database of projects) -->
+    <div class="row my-5" *ngFor="let project of projects">
+      <!-- project card -->
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <!-- Image column -->
+          <div class="col-md-6">
+            <img [src]='project.projectImage' class="card-img d-flex" alt="...">
           </div>
-        </div>
-      </div> -->
-
-      <!-- Featured project -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <a href="https://greener-pastures-form.netlify.com" target="_blank">
-            <img src="../../../assets/images/portfolio-images/FormValidation3.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
-          </a>
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Form Validation</h4>
-            <p class="text-black-50 mb-0">A form related to another project (Greener Pastures Real Estate) with validating checks for each field. Regular expressions are used to make sure passwords meet the security requirements.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 1 row -->
-      <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img src="../../../assets/images/portfolio-images/FormValidation3.jpg" alt="FormValidation project" class="img-fluid">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Form Validation</h4>
-                <p class="mb-0 text-white-50">A form with validating checks for each field. Regular expressions are used to make sure passwords meet the security requirements.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
+          <!-- project information column -->
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title text-center mt-3 mb-2 pb-3 border-bottom">{{ project.projectTitle }}</h5>
+              <p class="card-text text-center">{{ project.projectText }}</p>
+              <p class="card-text languages-text border-top border-bottom py-2 text-center"><small
+                  class="text-muted">{{ project.projectLanguages }}</small></p>
+              <div class="project-buttons">
+                <a type="button" class="btn btn-secondary btn-lg btn-block btn-sm text-light"
+                  [href]="project.projectLive" target="_blank" attr="project.projectTitle === 'Portfolio Page' ? disabled : active">
+                  <i class="fas fa-eye"><span>    Live Demo</span></i>
+                </a> 
+                <a type="button" class="btn btn-dark btn-lg btn-block btn-sm text-light" [href]="project.projectCode"
+                  target="_blank">
+                  <i class="fas fa-code"><span>    Code Repository</span></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
+    </div>
   </div>
 </section>
-
-
-
-
-
-
-<!-- Container for projects section-->
-<!-- <div class="container border-bottom" id="projects">
-  <!- - Projects section title - ->
-  <div class="section-title border-bottom">
-    <p class="text-center m-5 font-weight-bold">Projects</p>
-  </div>
-  <!- - Project #1 - ->
-  <div class="project-item shadow p-3 mb-5 bg-white">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-4">
-        <div class="card" style="width: 18rem;">
-          <!- - Card title - ->
-          <h5 class="card-header text-center">Project 1</h5>
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">PHP/SQL Project</h5>
-            <p class="card-text">Short project description.</p>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Code Repository</a>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <!- - Project #1 description - ->
-      <div class="col-lg-8 col-md-6 col-sm-12 col-xs-8 mt-5">
-        <ul>
-          <li>point 1</li>
-          <li>point 2</li>
-          <li>point 3</li>
-          <li>point 4</li>
-          <li>point 5</li>
-        </ul>
-      </div>
-  </div>
-  </div>
-
-  <!- - Project #2 - ->
-  <div class="project-item shadow p-3 mb-5 bg-white">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-4">
-        <div class="card" style="width: 18rem;">
-          <!- - Card title - ->
-          <h5 class="card-header text-center">Project 2</h5>
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">React Project</h5>
-            <p class="card-text">Short project description.</p>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Code Repository</a>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <!- - Project #2 description - ->
-      <div class="col-lg-8 col-md-6 col-sm-12 col-xs-8 mt-5">
-        <ul>
-          <li>point 1</li>
-          <li>point 2</li>
-          <li>point 3</li>
-          <li>point 4</li>
-          <li>point 5</li>
-        </ul>
-      </div>
-  </div>
-  </div>
-
-  <!- - Project #3 - ->
-  <div class="project-item shadow p-3 mb-5 bg-white">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-4">
-        <div class="card" style="width: 18rem;">
-          <!- - Card title - ->
-          <h5 class="card-header text-center">Project 3</h5>
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Wordpress Project</h5>
-            <p class="card-text">Short project description.</p>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Code Repository</a>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <!- - Project #3 description - ->
-      <div class="col-lg-8 col-md-6 col-sm-12 col-xs-8 mt-5">
-        <ul>
-          <li>point 1</li>
-          <li>point 2</li>
-          <li>point 3</li>
-          <li>point 4</li>
-          <li>point 5</li>
-        </ul>
-      </div>
-  </div>
-  </div>
-</div> -->

@@ -3,6 +3,16 @@
     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.8) 0%, rgba(255, 255, 255, 1) 50%);
 }
 
+
+#projects > div > div:nth-child(1) > div > div > div:nth-child(2) > div > div > button.btn.btn-primary.btn-lg.btn-block.btn-sm > a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a i span {
+    font-family: 'Lato', sans-serif;;
+}
+
 .projects-section .featured-text {
     padding: 2rem;
 }
